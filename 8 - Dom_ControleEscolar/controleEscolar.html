@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./controleEscolar.css">    
+    <title>Controle escolar</title>
+</head>
+<body>
+
+    <div class="conteiner-controle-escolar">
+        <div class="formulario">
+            <h2 id="titulo-controle-escolar">Controle Escolar</h2>
+        
+            <label for="name" class="item label">Nome Completo</label>
+            <input id="name" class="item campo" type="text" placeholder="ex:Joao Alves"/>
+    
+            <label for="nota-final" class="item label">Nota Final</label>
+            <input id="nota-final" class="item campo" type="number" placeholder="ex:9.5"/>
+    
+            <label for="frequencia" class="item label">Frequência</label>
+            <input id="frequencia" class="item campo" type="number" placeholder="ex:75.00"/>
+    
+            <!-- Adicionando a área para a nota de recuperação -->
+            <div id="area-recuperacao" class="item">
+                <!-- Os elementos serão adicionados dinamicamente aqui -->
+            </div>
+            
+            <button id="btn-calcular" class="item botao">Calcular</button>
+        
+            <label for="resultado" class="item label">Status de aprovação:</label>
+            <p id="resultado" class="item saida"></p>
+        </div>
+        
+
+
+    </div>
+
+    <script src="./controleEscolar.js"></script>
+</body>
+
+</html>
